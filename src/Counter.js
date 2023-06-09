@@ -9,9 +9,8 @@ import Button from "@mui/material/Button";
 const Counter = () => {
   const { count } = useSelector((state) => state.counter);
   const { users } = useSelector((state) => state.users);
-  console.log(users, count);
+  console.log(count);
   const dispatch = useDispatch();
-  console.log(users);
   useEffect(() => {
     const getPosts = async () => {
       const res = await fetch("https://jsonplaceholder.typicode.com/users");
