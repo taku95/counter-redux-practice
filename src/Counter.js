@@ -4,7 +4,7 @@ import { increment, decrement } from "./counterSlice";
 import Button from "@mui/material/Button";
 
 const Counter = () => {
-  const count = useSelector((state) => state);
+  const { count } = useSelector((state) => state.counter);
   const dispatch = useDispatch();
 
   return (
